@@ -171,16 +171,28 @@
                            source: document.referrer || null,
                            utm: getUtmParams()
                  };
-                 console.log('[RETREAT lead - demo mode, not sent anywhere]', leadPayload);
-                         if (typeof fbq === 'function') {
-                                             fbq('track', 'Lead');
-                         }
-                 window.setTimeout(function () {
-                           resultBox.className = 'form__result is-success';
-                           resultBox.textContent = 'Демонстраційний режим. Форму заповнено правильно, але надсилання заявки ще не підключено.';
-                           isSubmitting = false;
-                           submitBtn.disabled = false;
-                 }, 500);
+if (typeof fbq === 'function') {
+    fbq('track', 'Lead');
+}
+
+             fetch('https://retreat-lead.grozalesha078.workers.dev/', {
+                 method: 'POST',
+                 headers: { 'Content-Type': 'application/json' },
+                 body: JSON.stringify(leadPayload)
+             })
+             .then(function (res) {
+                 if (!res.ok) throw new Error('Lead request failed');
+                 resultBox.className = 'form__result is-success';
+                 resultBox.textContent = 'Дякуємо! Заявку надіслано, ми зв\'яжемося з вами найближчим часом.';
+             })
+             .catch(function () {
+                 resultBox.className = 'form__result is-error';
+                 resultBox.textContent = 'Не вдалося надіслати заявку. Спробуйте ще раз або зателефонуйте нам напряму.';
+             })
+             .finally(function () {
+                 isSubmitting = false;
+                 submitBtn.disabled = false;
+             });
          });
    }
 
