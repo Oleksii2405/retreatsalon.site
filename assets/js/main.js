@@ -172,6 +172,9 @@
                            utm: getUtmParams()
                  };
                  console.log('[RETREAT lead - demo mode, not sent anywhere]', leadPayload);
+                         if (typeof fbq === 'function') {
+                                             fbq('track', 'Lead');
+                         }
                  window.setTimeout(function () {
                            resultBox.className = 'form__result is-success';
                            resultBox.textContent = 'Демонстраційний режим. Форму заповнено правильно, але надсилання заявки ще не підключено.';
