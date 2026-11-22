@@ -24,7 +24,7 @@
    function updateSubmitLabel() {
          var selected = form.querySelector('input[name="requestType"]:checked');
          if (!selected || !submitBtn) return;
-         submitBtn.textContent = selected.value === 'certificate' ? 'Замовити сертифікат' : 'Обрати вільний час';
+         submitBtn.textContent = selected.value === 'certificate' ? 'Замовити сертифікат' : 'Хочу на SPA';
    }
 
    requestTypeRadios.forEach(function (radio) {
