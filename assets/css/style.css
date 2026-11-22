@@ -153,28 +153,17 @@ a { color: var(--c-violet-accent); text-decoration: none; }
 .hero__content {
     position: relative;
     z-index: 1;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 36px;
     padding-top: 28px;
 }
+.hero__text { max-width: 640px; margin: 0 auto; text-align: center; }
+.hero__subtitle { margin-left: auto; margin-right: auto; }
+.hero__cta { align-items: center; }
 .hero__title { font-size: clamp(30px, 6.4vw, 48px); letter-spacing: -0.01em; }
 .hero__badge { display: inline-block; padding: 8px 18px; border-radius: 999px; background: var(--c-violet-soft); color: var(--c-plum-dark); font-family: var(--font-ui); font-weight: 700; font-size: 12.5px; letter-spacing: 0.04em; margin-bottom: 18px; }
 .hero__subtitle { font-size: 17.5px; max-width: 480px; }
-.hero__meta { font-family: var(--font-ui); font-weight: 700; font-size: 14px; color: var(--c-violet-accent); margin: 0 0 24px; }
 .hero__cta { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
-.hero__media { display: flex; justify-content: center; }
-.hero__photo-frame { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-soft); max-width: 420px; width: 100%; }
-.hero__photo { aspect-ratio: 4/5; object-fit: cover; width: 100%; height: 100%; }
-@media (min-width: 900px) {
-    .hero__content { grid-template-columns: 1.1fr 0.9fr; align-items: center; }
+@media (min-width: 640px) {
     .hero__cta { flex-direction: row; align-items: center; }
-    .hero__media { justify-content: flex-end; }
-}
-@media (max-width: 899px) {
-    .hero__text { text-align: center; }
-    .hero__subtitle { margin-left: auto; margin-right: auto; }
-    .hero__cta { align-items: center; }
 }
 @media (max-width: 640px) {
     .hero { padding-bottom: 32px; }
@@ -183,8 +172,6 @@ a { color: var(--c-violet-accent); text-decoration: none; }
     .hero__content { gap: 24px; padding-top: 18px; }
     .hero__badge { margin-bottom: 14px; }
     .hero__subtitle { font-size: 16px; }
-    .hero__meta { margin-bottom: 18px; }
-    .hero__photo-frame { max-width: 320px; }
 }
 .split {
     display: grid;
