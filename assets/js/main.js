@@ -24,17 +24,20 @@
    function updateSubmitLabel() {
          var selected = form.querySelector('input[name="requestType"]:checked');
          if (!selected || !submitBtn) return;
-         submitBtn.textContent = selected.value === 'certificate' ? 'Замовити сертифікат' : 'Хочу на SPA';
+         submitBtn.textContent = selected.value === 'certificate' ? 'Замовити сертифікат' : 'Записатися на SPA';
    }
 
    requestTypeRadios.forEach(function (radio) {
          radio.addEventListener('change', updateSubmitLabel);
    });
 
+   var selectedProgramName = null;
+
    document.querySelectorAll('.js-scroll-to-form').forEach(function (btn) {
          btn.addEventListener('click', function () {
                  var type = btn.getAttribute('data-request-type');
                  if (type) setRequestType(type);
+                 selectedProgramName = btn.getAttribute('data-program-name') || null;
                  var target = document.getElementById('form');
                  if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                  var nameInput = document.getElementById('name');
@@ -167,6 +170,7 @@
                            name: nameInput.value.trim(),
                            phone: phoneInput.value.trim(),
                            requestType: form.querySelector('input[name="requestType"]:checked').value,
+                           program: selectedProgramName || null,
                            timestamp: new Date().toISOString(),
                            source: document.referrer || null,
                            utm: getUtmParams()
