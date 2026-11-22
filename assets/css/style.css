@@ -475,3 +475,54 @@ a { color: var(--c-violet-accent); text-decoration: none; }
 @media (min-width: 900px) {
     .sticky-cta { display: none; }
 }
+.thankyou-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.thankyou-modal.is-visible { display: flex; }
+.thankyou-modal__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(45, 38, 49, 0.55);
+}
+.thankyou-modal__card {
+    position: relative;
+    z-index: 1;
+    background: var(--c-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+    padding: 36px 28px;
+    max-width: 380px;
+    width: 100%;
+    text-align: center;
+}
+.thankyou-modal__close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: var(--c-lavender-light);
+    color: var(--c-plum-dark);
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+}
+.thankyou-modal__avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 16px;
+    box-shadow: var(--shadow-softer);
+}
+.thankyou-modal__card h3 { font-size: 24px; margin-bottom: 12px; }
+.thankyou-modal__card p { font-size: 14.5px; margin-bottom: 16px; }
+.thankyou-modal__card .btn { margin-top: 4px; }
