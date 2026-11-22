@@ -75,6 +75,15 @@
          });
    });
 
+   document.querySelectorAll('.program__toggle').forEach(function (btn) {
+         var details = btn.nextElementSibling;
+         btn.addEventListener('click', function () {
+                 var isOpen = btn.getAttribute('aria-expanded') === 'true';
+                 btn.setAttribute('aria-expanded', String(!isOpen));
+                 details.style.maxHeight = isOpen ? null : details.scrollHeight + 'px';
+         });
+   });
+
    var phoneInput = document.getElementById('phone');
 
    function formatUaPhone(raw) {
