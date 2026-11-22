@@ -16,27 +16,36 @@ fbq('track', 'PageView');
 </script>
 <meta charset="UTF-8">
 <title>Японське SPA у Первомайську | RETREAT</title>
-<link rel="stylesheet" href="assets/css/style.css?v=3">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=4">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <header class="hero" id="hero">
 <div class="hero__bg" aria-hidden="true"></div>
-<div class="container hero__top">
-<div class="hero__brand">
+<div class="container navbar">
+<div class="navbar__brand">
 <img src="assets/img/retreat-avatar.png" alt="RETREAT" class="hero__avatar">
+<span class="navbar__wordmark">RETREAT</span>
 </div>
+<nav class="navbar__nav" aria-label="Основна навігація">
+<a href="#immersion" class="navbar__link js-scroll-link">Про SPA</a>
+<a href="#rituals" class="navbar__link js-scroll-link">Наші ритуали</a>
+<button class="btn btn--outline btn--sm js-scroll-to-form" data-request-type="spa">Записатися</button>
+</nav>
 </div>
 <div class="container hero__content">
 <div class="hero__text">
-<span class="hero__badge">ЄДИНА ЯПОНСЬКА SPA-КУШЕТКА В МИКОЛАЇВСЬКІЙ ОБЛАСТІ</span>
-<h1 class="hero__title">Ваш час, коли можна нарешті нікуди не поспішати</h1>
-<p class="hero__subtitle">Тепла вода, ніжний масаж голови, аромати ефірних олій та турботливі руки майстра. Відкрийте для себе особливий ритуал японського SPA у RETREAT.</p>
-<p class="hero__meta">SPA-ритуали тривалістю від 1,5 до 2,5 години</p>
+<span class="hero__badge">ВПЕРШЕ В МИКОЛАЇВСЬКІЙ ОБЛАСТІ</span>
+<h1 class="hero__title">Японське SPA, де час належить тільки вам</h1>
+<p class="hero__subtitle">Заплющте очі. Відчуйте тепло води, ніжні дотики майстра та аромати ефірних олій. Дозвольте собі відпочинок, під час якого нікуди не потрібно поспішати.</p>
+<p class="hero__meta">Єдина японська SPA-кушетка в Миколаївській області</p>
 <div class="hero__cta">
-<button class="btn btn--primary btn--lg js-scroll-to-form" data-request-type="spa">Хочу на японське SPA</button>
+<a href="#rituals" class="btn btn--primary btn--lg js-scroll-link">Відкрити SPA-ритуали</a>
+<button class="btn btn--ghost js-scroll-to-form" data-request-type="spa">Записатися на SPA</button>
 </div>
-<p class="hero__note">Залиште заявку — ми допоможемо обрати ваш ідеальний ритуал.</p>
 </div>
 <div class="hero__media">
 <div class="hero__photo-frame">
@@ -49,81 +58,171 @@ fbq('track', 'PageView');
 <section class="section section--split" id="immersion" data-animate>
 <div class="container split">
 <div class="split__media">
-<img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Атмосфера японського SPA-ритуалу" loading="lazy" width="800" height="900">
+<img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80" alt="Атмосфера японського SPA-ритуалу" loading="lazy" width="800" height="900">
 </div>
 <div class="split__text">
-<h2>Уявіть місце, де час ніби сповільнюється…</h2>
-<p>Ви заплющуєте очі. Чуєте тихий звук води, відчуваєте її приємне тепло та ніжні дотики майстра.</p>
-<p>У повітрі — легкі аромати трав та ефірних олій. Лунає спокійна музика, а думки про справи, зустрічі й нескінченні турботи поступово відходять на другий план.</p>
-<p>Тут не потрібно поспішати, щось вирішувати чи про когось піклуватися. Тут нарешті піклуються про вас.</p>
-<p class="accent-phrase">«RETREAT — це час, який належить тільки вам».</p>
+<span class="eyebrow">ФІЛОСОФІЯ HEAD SPA</span>
+<h2>Уявіть місце, де світ нарешті сповільнюється…</h2>
+<p>Ви зручно влаштовуєтеся на SPA-кушетці, заплющуєте очі й чуєте тихий звук води.</p>
+<p>Теплі потоки ніжно торкаються шкіри голови. Майстер повільними рухами виконує масаж. У повітрі відчуваються легкі аромати трав та ефірних олій.</p>
+<p>Поступово думки про роботу, домашні справи та щоденний поспіх відходять на другий план.</p>
+<p>У RETREAT вам не потрібно ні про що турбуватися. Просто дозвольте собі насолодитися моментом.</p>
+<p class="accent-phrase">«Час, протягом якого від вас нічого не потрібно».</p>
 </div>
 </div>
 </section>
-<section class="section section--light" id="care" data-animate>
+<section class="section" id="care" data-animate>
 <div class="container">
-<h2 class="section__title center">Коли глибокий релакс поєднується з професійним доглядом</h2>
-<p class="section__subtitle center">Японське Head SPA — це не просто приємні відчуття. Це продумане поєднання масажу, водних ритуалів та догляду за волоссям і шкірою голови.</p>
-<div class="cards cards--4">
-<div class="card">
-<h3>Масаж голови та шиї</h3>
-<p>Турботливі рухи майстра допомагають розслабитися, відпустити щоденну напругу та насолодитися моментом спокою.</p>
-</div>
-<div class="card">
+<h2 class="section__title center">Більше, ніж SPA. Турбота, яку відчуваєш у кожній деталі</h2>
+<div class="feature-grid">
+<div class="feature-card">
+<div class="feature-card__media"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=700&q=80" alt="Акварелаксація — водна дуга під час SPA-ритуалу" loading="lazy" width="700" height="525"></div>
+<div class="feature-card__body">
 <h3>Акварелаксація</h3>
-<p>Лагідні потоки теплої води огортають шкіру голови, створюючи незвичайні відчуття та особливу атмосферу відпочинку.</p>
+<p>Унікальна водна дуга створює м'які потоки теплої води, що огортають шкіру голови та дарують незвичайні відчуття. Саме той момент, коли хочеться заплющити очі й забути про час.</p>
 </div>
-<div class="card">
-<h3>Догляд за шкірою голови</h3>
-<p>Делікатне очищення та спеціальні масажери доповнюють SPA-ритуал турботою про шкіру голови.</p>
 </div>
-<div class="card">
+<div class="feature-card">
+<div class="feature-card__media"><img src="https://images.unsplash.com/photo-1519824145371-296894a0daa9?auto=format&fit=crop&w=700&q=80" alt="Масаж голови та шиї у RETREAT" loading="lazy" width="700" height="525"></div>
+<div class="feature-card__body">
+<h3>Масаж голови та шиї</h3>
+<p>Повільні, турботливі рухи майстра допомагають розслабитися та відпустити напругу насиченого дня. У розширених ритуалах на вас також чекають додаткові етапи масажу й догляду.</p>
+</div>
+</div>
+<div class="feature-card">
+<div class="feature-card__media"><img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=700&q=80" alt="Професійний догляд за волоссям та шкірою голови" loading="lazy" width="700" height="525"></div>
+<div class="feature-card__body">
 <h3>Професійний догляд за волоссям</h3>
-<p>Залежно від обраної програми ритуал може включати парову ванну та відновлювальний догляд із професійними засобами.</p>
+<p>SPA-ритуали поєднують приємні відчуття з професійними засобами для волосся та шкіри голови. Залежно від програми догляд доповнюється паровою ванною та реконструкцією волосся.</p>
 </div>
+</div>
+<div class="feature-card">
+<div class="feature-card__media"><img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=700&q=80" alt="Атмосфера та аромати у RETREAT" loading="lazy" width="700" height="525"></div>
+<div class="feature-card__body">
+<h3>Аромати та атмосфера</h3>
+<p>Ніжні аромати, спокійна музика, тепло води й уважність майстра створюють простір, де можна нарешті побути наодинці зі своїми відчуттями.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section section--light" id="salt-ritual" data-animate>
+<div class="container split split--reverse">
+<div class="split__media">
+<img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80" alt="Сольовий догляд My Organics у RETREAT" loading="lazy" width="800" height="900">
+</div>
+<div class="split__text">
+<span class="eyebrow">ПРОФЕСІЙНИЙ ДОГЛЯД</span>
+<h2>Гімалайська рожева сіль, трави та магія дбайливого очищення</h2>
+<p>Один із найулюбленіших ритуалів RETREAT — сольовий догляд My Organics.</p>
+<p>Його основа — гімалайська рожева сіль, трави та композиції ефірних олій.</p>
+<p>Під час масажу сольовий догляд допомагає очищувати шкіру голови від надлишку себуму та накопичених забруднень, даруючи приємне відчуття свіжості.</p>
+<p>Це особливе поєднання професійного догляду, делікатних дотиків і справжнього SPA-задоволення.</p>
+<span class="salt-badge">Сольовий догляд My Organics входить до всіх трьох SPA-програм RETREAT</span>
 </div>
 </div>
 </section>
 <section class="section" id="rituals" data-animate>
 <div class="container">
-<h2 class="section__title center">Кожен ритуал — особлива історія турботи про себе</h2>
-<p class="section__subtitle center">У RETREAT ви можете обрати SPA-догляд відповідно до своїх побажань: від очищення шкіри голови та акварелаксації до комплексного ритуалу з відновленням волосся, ароматерапією та доглядом за обличчям. Кожна програма має своє наповнення, а наш адміністратор допоможе знайти саме той формат, який подарує вам найбільше задоволення.</p>
-<div class="cards cards--3">
-<div class="card">
-<h3>Очищення та свіжість</h3>
-<p>Делікатний догляд за шкірою голови, масаж та акварелаксація.</p>
+<span class="eyebrow center-block">НАШІ SPA-РИТУАЛИ</span>
+<h2 class="section__title center">Три ритуали, кожен з яких — своя історія турботи</h2>
+<p class="section__subtitle center">Оберіть формат, що відповідає вашому часу та настрою, або просто залиште заявку — адміністратор допоможе визначитися. Вибір конкретної програми ні до чого не зобов'язує.</p>
+<div class="programs">
+<article class="program">
+<div class="program__photo">
+<img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=700&q=80" alt="HEAD SPA + DETOX у RETREAT" loading="lazy" width="700" height="560">
 </div>
-<div class="card">
-<h3>Турбота про волосся</h3>
-<p>SPA-ритуали з паровою ванною та професійними засобами для догляду.</p>
+<div class="program__card">
+<span class="program__label">РИТУАЛ № 01</span>
+<h3>HEAD SPA + DETOX</h3>
+<p class="program__desc">Почніть знайомство з японським SPA з ритуалу, який поєднує приємне розслаблення та делікатне очищення шкіри голови. Тепла вода, масаж, професійний сольовий догляд і парова ванна допоможуть відволіктися від щоденних справ та присвятити цей час собі.</p>
+<ul class="program__checklist">
+<li>Релакс-масаж голови та шийно-комірцевої зони</li>
+<li>Сольовий догляд My Organics</li>
+<li>Очищення шкіри голови різними видами масажерів</li>
+<li>Акварелаксація та масаж</li>
+<li>SPA-догляд за волоссям із паровою ванною</li>
+<li>Чаювання після процедури</li>
+</ul>
+<div class="program__footer">
+<div class="program__meta"><span class="program__meta-value">1,5 год</span><span class="program__meta-label">ТРИВАЛІСТЬ</span></div>
+<div class="program__meta"><span class="program__meta-value">2000 грн</span><span class="program__meta-label">ВАРТІСТЬ</span></div>
+<button class="btn btn--primary js-scroll-to-form" data-request-type="spa" data-program-name="HEAD SPA + DETOX">Хочу на SPA</button>
 </div>
-<div class="card">
-<h3>Повне занурення в релакс</h3>
-<p>Розширені програми з масажем обличчя, ароматерапією та додатковими етапами догляду.</p>
+</div>
+</article>
+<article class="program program--reverse">
+<div class="program__photo">
+<img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=700&q=80" alt="HEAD SPA з відновлювальним доглядом Mediceuticals" loading="lazy" width="700" height="560">
+</div>
+<div class="program__card">
+<span class="program__label">РИТУАЛ № 02</span>
+<h3>HEAD SPA + ВІДНОВЛЕННЯ</h3>
+<p class="program__desc">Коли хочеться не лише відпочити, а й приділити особливу увагу своєму волоссю. Цей ритуал поєднує ніжний масаж, очищення шкіри голови, акварелаксацію та професійний відновлювальний догляд Mediceuticals. Дві години, протягом яких ваша єдина справа — насолоджуватися моментом.</p>
+<ul class="program__checklist">
+<li>Релакс-масаж голови та шийно-комірцевої зони</li>
+<li>Сольовий догляд My Organics</li>
+<li>Реконструкція волосся Mediceuticals</li>
+<li>Делікатне очищення шкіри голови різними видами масажерів</li>
+<li>Акварелаксація та масаж</li>
+<li>SPA-догляд за волоссям із паровою ванною</li>
+<li>Чаювання після процедури</li>
+</ul>
+<div class="program__footer">
+<div class="program__meta"><span class="program__meta-value">2 год</span><span class="program__meta-label">ТРИВАЛІСТЬ</span></div>
+<div class="program__meta"><span class="program__meta-value">2500 грн</span><span class="program__meta-label">ВАРТІСТЬ</span></div>
+<button class="btn btn--primary js-scroll-to-form" data-request-type="spa" data-program-name="HEAD SPA + ВІДНОВЛЕННЯ">Хочу на SPA</button>
 </div>
 </div>
-<p class="center"><span class="duration-badge">Тривалість ритуалів — від 1,5 до 2,5 години</span></p>
+</article>
+<article class="program">
+<div class="program__photo">
+<img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=700&q=80" alt="HEAD SPA Повний RETREAT — масаж та догляд за обличчям" loading="lazy" width="700" height="560">
+</div>
+<div class="program__card">
+<span class="program__label">РИТУАЛ № 03</span>
+<h3>HEAD SPA ПОВНИЙ RETREAT</h3>
+<p class="program__desc">Найповніший ритуал RETREAT для тих, хто мріє поставити щоденні справи на паузу та повністю присвятити час собі. Масаж голови, обличчя, шиї та рук, теплі водні процедури, ароматерапія, догляд за волоссям і обличчям — кожен етап створює особливе відчуття турботи. Це маленька відпустка, для якої не потрібно нікуди їхати.</p>
+<ul class="program__checklist">
+<li>Релакс-масаж голови, обличчя та шийно-комірцевої зони</li>
+<li>Сольовий догляд My Organics</li>
+<li>Реконструкція волосся з паровою ванною</li>
+<li>Делікатне очищення шкіри голови різними видами масажерів</li>
+<li>Акварелаксація</li>
+<li>Парова ароматерапія</li>
+<li>SPA-догляд за обличчям</li>
+<li>Масаж рук</li>
+<li>Чаювання після процедури</li>
+</ul>
+<div class="program__footer">
+<div class="program__meta"><span class="program__meta-value">2,5 год</span><span class="program__meta-label">ТРИВАЛІСТЬ</span></div>
+<div class="program__meta"><span class="program__meta-value">3000 грн</span><span class="program__meta-label">ВАРТІСТЬ</span></div>
+<button class="btn btn--primary js-scroll-to-form" data-request-type="spa" data-program-name="HEAD SPA ПОВНИЙ RETREAT">Хочу на SPA</button>
+</div>
+</div>
+</article>
+</div>
 </div>
 </section>
 <section class="section section--light" id="atmosphere" data-animate>
 <div class="container">
-<h2 class="section__title center">Відчуйте атмосферу, в яку хочеться повертатися</h2>
-<p class="section__subtitle center">Приглушене світло, спокійна музика, тепло води та уважність до кожної деталі. У RETREAT навіть звичайний день може перетворитися на маленьку відпустку.</p>
+<h2 class="section__title center">Місце, де звичайний день перетворюється на маленьку відпустку</h2>
+<p class="section__subtitle center">Тепло води, спокійна музика, ніжні дотики та затишок, який відчувається в кожній деталі. Зазирніть у світ RETREAT — можливо, саме такого відпочинку вам зараз не вистачає.</p>
 <div class="gallery" role="list">
-<div class="gallery__item" role="listitem">
-<img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=700&q=80" alt="Атмосфера SPA-кушетки" loading="lazy" width="700" height="900">
+<div class="gallery__item gallery__item--big" role="listitem">
+<img src="https://images.unsplash.com/photo-1583416750470-965b2707b355?auto=format&fit=crop&w=900&q=80" alt="Атмосфера SPA-кімнати RETREAT" loading="lazy" width="900" height="900">
 </div>
 <div class="gallery__item" role="listitem">
-<img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=700&q=80" alt="Водна дуга під час процедури" loading="lazy" width="700" height="900">
+<img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=700&q=80" alt="Інтер'єр салону RETREAT" loading="lazy" width="700" height="700">
 </div>
 <div class="gallery__item" role="listitem">
-<img src="https://images.unsplash.com/photo-1519824145371-296894a0daa9?auto=format&fit=crop&w=700&q=80" alt="Процес SPA-ритуалу" loading="lazy" width="700" height="900">
+<img src="https://images.unsplash.com/photo-1532926381893-7542290edf1d?auto=format&fit=crop&w=700&q=80" alt="Атмосфера релаксу в RETREAT" loading="lazy" width="700" height="700">
 </div>
 <div class="gallery__item" role="listitem">
-<img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=700&q=80" alt="Масаж голови" loading="lazy" width="700" height="900">
+<img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=700&q=80" alt="Доглядовий етап SPA-ритуалу" loading="lazy" width="700" height="700">
 </div>
 <div class="gallery__item" role="listitem">
-<img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=700&q=80" alt="Інтер'єр салону RETREAT" loading="lazy" width="700" height="900">
+<img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=700&q=80" alt="SPA-ванна в RETREAT" loading="lazy" width="700" height="700">
 </div>
 </div>
 <div class="center" style="margin-top: 32px;">
@@ -145,27 +244,27 @@ fbq('track', 'PageView');
 </section>
 <section class="section" id="faq" data-animate>
 <div class="container container--narrow">
-<h2 class="section__title center">Відповідаємо на ваші запитання</h2>
+<h2 class="section__title center">Що варто знати перед візитом?</h2>
 <div class="faq">
 <div class="faq__item">
 <button class="faq__question" aria-expanded="false">Скільки триває японське SPA?<span class="faq__toggle" aria-hidden="true"></span></button>
-<div class="faq__answer"><p>У RETREAT є кілька SPA-ритуалів тривалістю від 1,5 до 2,5 години. Адміністратор допоможе обрати формат відповідно до ваших побажань.</p></div>
+<div class="faq__answer"><p>У RETREAT є три SPA-програми тривалістю 1,5, 2 та 2,5 години. Ви можете обрати ритуал самостійно або отримати допомогу адміністратора.</p></div>
 </div>
 <div class="faq__item">
-<button class="faq__question" aria-expanded="false">Що входить у процедуру?<span class="faq__toggle" aria-hidden="true"></span></button>
-<div class="faq__answer"><p>Залежно від програми ритуал може включати масаж голови, шиї та обличчя, очищення шкіри голови, акварелаксацію, парову ванну, догляд за волоссям та інші приємні етапи.</p></div>
+<button class="faq__question" aria-expanded="false">Чим відрізняються SPA-програми?<span class="faq__toggle" aria-hidden="true"></span></button>
+<div class="faq__answer"><p>Програми відрізняються тривалістю та наповненням: від очищення шкіри голови й акварелаксації до комплексного догляду з реконструкцією волосся, ароматерапією та масажем обличчя.</p></div>
 </div>
 <div class="faq__item">
-<button class="faq__question" aria-expanded="false">Чи потрібно заздалегідь обирати програму?<span class="faq__toggle" aria-hidden="true"></span></button>
-<div class="faq__answer"><p>Ні. Просто залиште заявку, і наш адміністратор розповість про доступні SPA-ритуали та допоможе визначитися.</p></div>
+<button class="faq__question" aria-expanded="false">Чи потрібно одразу обирати програму?<span class="faq__toggle" aria-hidden="true"></span></button>
+<div class="faq__answer"><p>Ні. Залиште заявку, і наш адміністратор розповість про кожен ритуал та допоможе обрати найкращий варіант для вас.</p></div>
 </div>
 <div class="faq__item">
 <button class="faq__question" aria-expanded="false">Чи можна придбати подарунковий сертифікат?<span class="faq__toggle" aria-hidden="true"></span></button>
-<div class="faq__answer"><p>Так, ви можете залишити заявку на подарунковий сертифікат для близької людини. Ми зв'яжемося з вами та допоможемо з оформленням.</p></div>
+<div class="faq__answer"><p>Так. Японське SPA можна подарувати близькій людині. Для цього оберіть відповідний варіант у формі запису.</p></div>
 </div>
 <div class="faq__item">
-<button class="faq__question" aria-expanded="false">Де знаходиться RETREAT?<span class="faq__toggle" aria-hidden="true"></span></button>
-<div class="faq__answer"><p>Ми знаходимося у місті Первомайськ, Миколаївська область. Деталі візиту повідомимо під час запису.</p></div>
+<button class="faq__question" aria-expanded="false">Де знаходиться салон?<span class="faq__toggle" aria-hidden="true"></span></button>
+<div class="faq__answer"><p>RETREAT знаходиться у місті Первомайськ, Миколаївська область. Деталі візиту ви отримаєте під час запису.</p></div>
 </div>
 </div>
 </div>
@@ -173,9 +272,9 @@ fbq('track', 'PageView');
 <section class="section section--form" id="form" data-animate>
 <div class="container container--narrow">
 <h2 class="section__title center">Ваш час для себе починається тут</h2>
-<p class="section__subtitle center">Залиште свої контакти, а наш адміністратор розповість про SPA-ритуали та допоможе обрати той, що підійде саме вам.</p>
+<p class="section__subtitle center">Залиште свої контакти, і наш адміністратор допоможе обрати SPA-ритуал та зручний час для візиту.</p>
 <form class="booking-form" id="booking-form" novalidate>
-<p class="form__gift-note">Хочете зробити особливий подарунок мамі, подрузі чи коханій людині? Японське SPA можна подарувати у вигляді сертифіката — просто оберіть відповідний варіант нижче.</p>
+<p class="form__gift-note">Хочете подарувати ці приємні емоції мамі, подрузі чи коханій людині? Оберіть подарунковий сертифікат — ми допоможемо з оформленням.</p>
 <div class="request-type" role="radiogroup" aria-label="Тип заявки">
 <label class="request-type__option">
 <input type="radio" name="requestType" value="spa" checked>
@@ -201,8 +300,8 @@ fbq('track', 'PageView');
 <span>Я погоджуюсь на обробку персональних даних відповідно до <a href="privacy-policy.html" target="_blank" rel="noopener">політики конфіденційності</a></span>
 </label>
 <span class="field__error" id="consent-error"></span>
-<button type="submit" class="btn btn--primary btn--lg btn--block" id="submit-btn">Хочу на SPA</button>
-<p class="form__note">Ми зв'яжемося з вами, відповімо на запитання та допоможемо з вибором.</p>
+<button type="submit" class="btn btn--primary btn--lg btn--block" id="submit-btn">Записатися на SPA</button>
+<p class="form__note">Ми зв'яжемося з вами, розповімо про доступні ритуали та допоможемо з вибором.</p>
 <div class="form__result" id="form-result" role="status" aria-live="polite"></div>
 </form>
 </div>
@@ -224,6 +323,6 @@ fbq('track', 'PageView');
 <div class="sticky-cta" id="sticky-cta">
 <button class="btn btn--primary btn--block js-scroll-to-form" data-request-type="spa">Записатися</button>
 </div>
-<script src="assets/js/main.js?v=2"></script>
+<script src="assets/js/main.js?v=3"></script>
 </body>
 </html>
