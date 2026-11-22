@@ -122,7 +122,6 @@
    }
 
    var nameInput = document.getElementById('name');
-    var consentInput = document.getElementById('consent');
     var resultBox = document.getElementById('form-result');
     var isSubmitting = false;
 
@@ -154,13 +153,6 @@
                  valid = false;
          } else {
                  showFieldError(phoneInput, 'phone-error', '');
-         }
-         var consentError = document.getElementById('consent-error');
-         if (!consentInput.checked) {
-                 consentError.textContent = 'Потрібна згода на обробку персональних даних';
-                 valid = false;
-         } else {
-                 consentError.textContent = '';
          }
          return valid;
    }
