@@ -125,6 +125,29 @@
     var resultBox = document.getElementById('form-result');
     var isSubmitting = false;
 
+   var thankyouModal = document.getElementById('thankyou-modal');
+
+   function openThankyouModal() {
+         if (!thankyouModal) return;
+         thankyouModal.classList.add('is-visible');
+         thankyouModal.setAttribute('aria-hidden', 'false');
+   }
+
+   function closeThankyouModal() {
+         if (!thankyouModal) return;
+         thankyouModal.classList.remove('is-visible');
+         thankyouModal.setAttribute('aria-hidden', 'true');
+   }
+
+   if (thankyouModal) {
+         thankyouModal.querySelectorAll('[data-modal-close]').forEach(function (el) {
+                 el.addEventListener('click', closeThankyouModal);
+         });
+         document.addEventListener('keydown', function (e) {
+                 if (e.key === 'Escape') closeThankyouModal();
+         });
+   }
+
    function showFieldError(input, errorId, message) {
          var errorEl = document.getElementById(errorId);
          if (message) {
@@ -187,8 +210,9 @@ if (typeof fbq === 'function') {
              })
              .then(function (res) {
                  if (!res.ok) throw new Error('Lead request failed');
-                 resultBox.className = 'form__result is-success';
-                 resultBox.textContent = 'Дякуємо! Заявку надіслано, ми зв\'яжемося з вами найближчим часом.';
+                 resultBox.className = 'form__result';
+                 resultBox.textContent = '';
+                 openThankyouModal();
              })
              .catch(function () {
                  resultBox.className = 'form__result is-error';
