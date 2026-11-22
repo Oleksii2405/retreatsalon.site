@@ -465,6 +465,7 @@ a { color: var(--c-violet-accent); text-decoration: none; }
 .footer { background: var(--c-plum-dark); color: var(--c-violet-soft); padding: 48px 0; }
 .footer__inner { display: flex; flex-direction: column; gap: 24px; }
 .footer__brand p { color: var(--c-violet-soft); opacity: 0.8; margin: 2px 0; font-size: 14px; }
+.footer__brand p a { color: var(--c-violet-soft); text-decoration: underline; }
 .footer__links { display: flex; gap: 20px; flex-wrap: wrap; }
 .footer__links a { color: var(--c-white); font-weight: 600; font-size: 14px; }
 @media (min-width: 700px) {
