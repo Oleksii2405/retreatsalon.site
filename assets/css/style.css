@@ -441,17 +441,6 @@ a { color: var(--c-violet-accent); text-decoration: none; }
 .field input:focus { outline: none; border-color: var(--c-violet-accent); background: var(--c-white); }
 .field input.is-invalid { border-color: #c0506a; }
 .field__error { display: block; min-height: 18px; font-size: 13px; color: #c0506a; margin-top: 6px; }
-.consent {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    font-size: 13.5px;
-    color: var(--c-text-soft);
-    margin-bottom: 8px;
-    cursor: pointer;
-}
-.consent input { margin-top: 3px; flex-shrink: 0; width: 17px; height: 17px; accent-color: var(--c-violet-accent); }
-.consent a { font-weight: 600; }
 .form__note { text-align: center; font-size: 13px; color: var(--c-text-soft); margin: 14px 0 0; }
 .form__result {
     margin-top: 16px;
