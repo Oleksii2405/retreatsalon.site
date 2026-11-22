@@ -337,7 +337,7 @@ a { color: var(--c-violet-accent); text-decoration: none; }
     .gallery {
         overflow: visible;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 16px;
     }
     .gallery__item { flex: unset; }
