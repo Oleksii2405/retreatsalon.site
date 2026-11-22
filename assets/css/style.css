@@ -208,7 +208,6 @@ a { color: var(--c-violet-accent); text-decoration: none; }
 .feature-card__body { padding: 24px 26px; }
 .feature-card__body h3 { font-size: 21px; margin-bottom: 8px; }
 .feature-card__body p { margin: 0; font-size: 15px; }
-.salt-badge { display: inline-block; margin-top: 28px; padding: 10px 22px; border-radius: 999px; background: var(--c-lavender-light); color: var(--c-plum-dark); font-weight: 600; font-size: 14px; }
 .duration-badge { display: inline-block; margin-top: 28px; padding: 10px 22px; border-radius: 999px; background: var(--c-lavender-light); color: var(--c-plum-dark); font-weight: 600; font-size: 14px; }
 .cards--3 {
     display: grid;
