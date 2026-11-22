@@ -19,7 +19,7 @@ fbq('track', 'PageView');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=13">
+<link rel="stylesheet" href="assets/css/style.css?v=14">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/ld+json">
 {
@@ -291,6 +291,18 @@ fbq('track', 'PageView');
 <div class="sticky-cta" id="sticky-cta">
 <button class="btn btn--primary btn--block js-scroll-to-form" data-request-type="spa">Записатися</button>
 </div>
-<script src="assets/js/main.js?v=5"></script>
+<div class="thankyou-modal" id="thankyou-modal" aria-hidden="true">
+<div class="thankyou-modal__overlay" data-modal-close></div>
+<div class="thankyou-modal__card" role="dialog" aria-modal="true" aria-labelledby="thankyou-modal-title">
+<button class="thankyou-modal__close" type="button" data-modal-close aria-label="Закрити">&times;</button>
+<img src="assets/img/retreat-avatar.png" alt="RETREAT" class="thankyou-modal__avatar">
+<h3 id="thankyou-modal-title">Дякуємо за заявку!</h3>
+<p>Наш менеджер зв'яжеться з вами найближчим часом — допоможемо обрати SPA-ритуал та зручний час візиту.</p>
+<p>RETREAT — простір краси, відновлення волосся та глибокого релаксу в Первомайську.</p>
+<p>Зазирніть до нашого Instagram, щоб ближче познайомитися з атмосферою салону та нашими процедурами.</p>
+<a href="https://www.instagram.com/retreat_salon_pervomaisk/" target="_blank" rel="noopener" class="btn btn--primary btn--block">Перейти в Instagram</a>
+</div>
+</div>
+<script src="assets/js/main.js?v=6"></script>
 </body>
 </html>
